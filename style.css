@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap');
+@import url('input.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    background: #FBFDFF;
+}
+
+.image {
+    margin-top: 98px;
+}
+
+.title {
+    color: #6B68EC;
+    font-size: 95px;
+    font-weight: 800;
+    margin: 30px 0 0;
+}
+
+.text {
+    color: #484855;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 17px 0;
+    line-height: 1.8;
+}
+
+.button {
+    --bg: #1C1C25;
+    --color: #fff;
+    --hover-bg: #6B68EC;
+    --hover-color: #fff;
+    --w: 363px;
+    --h: 99px;
+    --bd-color: transparent;
+    --bd-size: 2px;
+    --hover-bd-color: transparent;
+    --hover-bd-size: 2px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: var(--bg);
+    color: var(--color);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 48px 0;
+    padding: 0 20px;
+    text-decoration: none;
+    min-width: var(--w);
+    min-height: var(--h);
+    transition: 0.3s;
+    border: var(--bd-size) solid var(--bd-color);
+}
+
+.button:hover {
+    background-color: var(--hover-bg);
+    color: var(--hover-color);
+    border: var(--hover-bd-size) solid var(--hover-bd-color);
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 2px 2px #4040d9;
+}
+
+.button-red {
+    --bg: rgb(221, 55, 55);
+    --color: #fff;
+    --hover-bg: rgb(180, 44, 44);
+}
+
+.button-lg {
+    --w: 380px;
+    --h: 120px;
+}
+
+.button-sm {
+    --w: 340px;
+    --h: 80px;
+}
+
+.button-icon {
+    --w: var(--h);
+}
+
+.button-border {
+    --bd-color: red;
+    --hover-bd-color: #4040d9;
+    --hover-bd-size: 4px;
+}

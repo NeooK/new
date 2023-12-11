@@ -1,0 +1,56 @@
+.input {
+    --c: black;
+    --bg: #eeeeee;
+    --fw: 500;
+    --fs: 16px;
+    --bd-color: #ccc;
+    --bd-size: 1px;
+    background-color: var(--bg);
+    font-weight: var(--fw);
+    font-size: var(--fs);
+    border: var(--bd-size) solid var(--bd-color);
+    color: var(--c);
+    border-radius: 10px;
+    margin: 10px 0;
+    outline: none;
+    padding: 10px 15px;
+}
+
+.input:hover {
+    --bg: wite;
+}
+
+.input:focus {}
+
+.input:active {
+    --bg: rgb(193, 194, 245);
+
+}
+
+.input-error {
+    --bg: rgb(245, 193, 193);
+    --bd-color: #ff5a5a;
+    --bd-size: 3px;
+    --c: rgb(219, 85, 85);
+
+}
+
+.input-success {
+    --bg: rgb(193, 245, 193);
+    --bd-color: #94f987;
+    --bd-size: 2px;
+    --c: rgb(37, 220, 101);
+}
+
+.input-lg {
+    --fw: 700;
+    --fs: 18px;
+    padding: 20px 30px;
+
+}
+
+.input-sm {
+    --fw: 400;
+    --fs: 14px;
+    padding: 5px 7px;
+}
