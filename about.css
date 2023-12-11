@@ -1,0 +1,64 @@
+body {
+    text-align: center;
+    max-width: 1248px;
+
+}
+
+.contain-title {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    gap: 12px;
+
+}
+
+.title {
+    --g: 12px;
+    --h: auto;
+    --c: #1E1E1E;
+    --fs: 18px;
+    --fw: 500;
+    margin: 0;
+    width: var(--w);
+    color: var(--c);
+    font-family: Poppins;
+    font-size: var(--fs);
+    font-style: normal;
+    font-weight: var(--fw);
+    line-height: normal;
+    gap: var(--g);
+}
+
+.title-large {
+    --fs: 32px;
+    --fw: 700;
+}
+
+.card-title {
+    --fw: 700;
+}
+
+.text {
+    --c: rgba(103, 97, 97, 0.601);
+    --g: 12px;
+    color: var(--c);
+    gap: var(--g);
+}
+
+.card-text {
+    --c: rgb(97 97 97);
+    max-width: 400px;
+    --g: 12px;
+}
+
+.card-logo {
+    width: 96px;
+    height: 96px;
+    gap: 24px;
+}
