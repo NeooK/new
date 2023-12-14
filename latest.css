@@ -1,0 +1,96 @@
+body {
+    width: 1512px;
+    height: 1048px;
+    --bg: rgba(40, 41, 62, 1);
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg);
+}
+
+.logo {
+    color: rgba(239, 109, 88, 1);
+    margin: 89px 0 0 44px;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 3px;
+}
+
+.container {
+    display: flex;
+}
+
+.container-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 60px 20px 44px;
+}
+
+.container-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    --fs: 24px;
+    --fw: 500;
+    --lh: 1.5;
+    --c: rgba(255, 255, 255, 1);
+    font-size: var(--fs);
+    font-weight: var(--fw);
+    line-height: var(--lh);
+    color: var(--c);
+}
+
+.text-lg {
+    --fs: 56px;
+    --lh: 0.8;
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+.text-bg {
+    --fs: 40px;
+    --lh: 1.5;
+}
+
+.text-sm {
+    --fs: 14px;
+    --lh: 1;
+}
+
+.txt-fw-lg {
+    --fw: 900;
+}
+
+.txt-fw-bg {
+    --fw: 700;
+}
+
+.txt-fw-sm {
+    --fw: 400;
+}
+
+.button {
+    --bg: #1C1C25;
+    --w: 170px;
+    --h: 48px;
+    --bd-color: rgba(255, 255, 255, 0.30);
+    --bd-size: 1px;
+
+    align-items: center;
+    background: var(--bg);
+    border-radius: 6px;
+    border: var(--bd-size) solid var(--bd-color);
+    display: inline-flex;
+    justify-content: center;
+    min-width: var(--w);
+    min-height: var(--h);
+    padding: 0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.image {
+    width: 448px;
+    height: 659px;
+}
