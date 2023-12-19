@@ -1,13 +1,11 @@
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
 }
 
 .logo {
     color: rgba(239, 109, 88, 1);
     margin: 89px 0 0;
     text-decoration: none;
-    display: inline-block;
     letter-spacing: 3px;
 }
 
@@ -18,17 +16,20 @@ body {
 }
 
 .container {
-    display: flex;
-    margin: 0 auto 20px;
+    margin: 100px;
     max-width: 1400px;
-    gap: 40px;
 }
 
 .container-title {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+}
 
+.container-card-list {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
 }
 
 .container-card {
