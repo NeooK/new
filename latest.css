@@ -1,40 +1,36 @@
+/* Загальні стилі для всіх сторінок  */
 body {
     font-family: 'Roboto', sans-serif;
-}
-
-.logo {
-    color: rgba(239, 109, 88, 1);
-    margin: 89px 0 0;
-    text-decoration: none;
-    letter-spacing: 3px;
-}
-
-.latest-work {
-    --bg: rgba(40, 41, 62, 1);
-    background: var(--bg);
-    padding: 80px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
 }
 
 .container {
-    margin: 100px;
     max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
-.container-title {
-    display: flex;
+.button {
+    --bg: #1C1C25;
+    --w: 170px;
+    --h: 48px;
+    --bd-color: rgba(255, 255, 255, 0.30);
+    --bd-size: 1px;
+
     align-items: center;
-    justify-content: space-between;
-}
-
-.container-card-list {
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
-}
-
-.container-card {
-    display: flex;
-    flex-direction: column;
+    background: var(--bg);
+    border-radius: 6px;
+    border: var(--bd-size) solid var(--bd-color);
+    display: inline-flex;
+    justify-content: center;
+    min-width: var(--w);
+    min-height: var(--h);
+    padding: 0;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 .text {
@@ -77,27 +73,67 @@ body {
     --fw: 400;
 }
 
-.button {
-    --bg: #1C1C25;
-    --w: 170px;
-    --h: 48px;
-    --bd-color: rgba(255, 255, 255, 0.30);
-    --bd-size: 1px;
-
-    align-items: center;
-    background: var(--bg);
-    border-radius: 6px;
-    border: var(--bd-size) solid var(--bd-color);
-    display: inline-flex;
-    justify-content: center;
-    min-width: var(--w);
-    min-height: var(--h);
-    padding: 0;
+.logo {
+    color: rgba(239, 109, 88, 1);
+    margin: 89px 0 0;
     text-decoration: none;
-    transition: 0.3s;
+    letter-spacing: 3px;
 }
 
-.image {
+
+/* Стилі відносно блоку */
+.latest-work {
+    --bg: rgba(40, 41, 62, 1);
+    background: var(--bg);
+    padding: 80px 0;
+}
+
+.latest-work .latest-work-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.latest-work .latest-work-card-list {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.latest-work .latest-work-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.latest-work .latest-work-card .latest-work-cart-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 40px 30px 40px;
+}
+
+.latest-work .latest-work-card .latest-work-card-image {
     max-width: 448px;
+    min-width: 260px;
     width: 100%;
+    height: auto;
+}
+
+@media (max-width: 950px) {
+    .latest-work .latest-work-card-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .latest-work .latest-work-card .latest-work-card-image {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .latest-work .latest-work-title {
+        margin-bottom: 40px;
+        flex-direction: column
+    }
 }
